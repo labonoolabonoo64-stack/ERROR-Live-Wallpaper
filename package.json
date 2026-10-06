@@ -1,0 +1,20 @@
+{
+  "name": "error-live-wallpaper",
+  "version": "1.0.0",
+  "description": "ERROR Live Wallpaper - YouTube wallpaper with premium date/time overlay",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron .",
+    "dist": "electron-builder --win portable"
+  },
+  "devDependencies": {
+    "electron": "^38.0.0",
+    "electron-builder": "^26.0.12"
+  },
+  "build": {
+    "appId": "com.error.livewallpaper",
+    "productName": "ERROR Live Wallpaper",
+    "asar": true,
+    "win": { "target": ["portable"] }
+  }
+}
